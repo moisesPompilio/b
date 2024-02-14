@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CriptoApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Criptografia</h1>
+        <form id="cryptoForm" >
+            <label for="operation">Escolha a operação:</label>
+            <select name="operation" id="operation">
+                <option value="encrypt">Criptografar</option>
+                <option value="decrypt">Descriptografar</option>
+            </select>
+
+            <label for="message">Mensagem:</label>
+            <input type="text" name="message" id="message" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" required>
+
+            <button type="submit">Executar</button>
+            <div id="resultContainer" class="resultsContainers">
+                <p id="result"></p>
+                <button class="copy-button" onclick="copyResult()">Copiar</button>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <h1>Buscar seeds</h1>
+        <form id="seedsForm" >
+            <label for="seedOperation">Operação com Palavras:</label>
+            <select name="seedOperation" id="seedOperation">
+                <option value="search">Buscar Palavra</option>
+                <option value="show">Mostrar Palavra</option>
+            </select>
+
+            <label for="seedInput">Palavras/Posições:</label>
+            <input type="text" name="seedInput" id="seedInput">
+            <label for="increment">Incremento</label>
+            <input type="number" name="increment" id="increment">
+
+            <button type="submit"> Operação</button>
+            <div id="seedResultContainer" class="resultsContainers">
+                <p id="seedResult"></p>
+                <button onclick="copySeedResult()">Copiar</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/cryptography.js"></script>
+    <script src="js/selectSeeds.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/wordlist.js"></script>
+</body>
+</html>

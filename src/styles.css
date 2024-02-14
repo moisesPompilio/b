@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#seedOperation,
+#seedInput {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+#seedResult {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.resultsContainers {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.show {
+    display: inline-block;
+}
+
+p {
+    margin: 10px;
+    word-wrap: break-word;
+}
